@@ -57,15 +57,22 @@ const zucchine = [
 
 let sommaMax = 0;
 let sommaMin = 0;
+let zucchine1 = [];
+let zucchine2 = [];
 
 for ( let i = 0 ; i < zucchine.length ; i++) {
     if (zucchine[i].lunghezza >= 15) {
         sommaMax += zucchine[i].peso;
+        zucchine1.push(zucchine[i]);
+
     } else {
         sommaMin += zucchine[i].peso;
+        zucchine2.push(zucchine[i]);
     }
 }
 
 console.log(zucchine);
 console.log(sommaMax);
+console.log(zucchine1);
 console.log(sommaMin);
+console.log(zucchine2);
