@@ -55,8 +55,6 @@ const zucchine = [
     }
 ];
 
-
-
 let sommaMax = 0;
 let sommaMin = 0;
 
