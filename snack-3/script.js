@@ -55,3 +55,25 @@ const cars = [
         alimentazione: "Benzina"
     },
 ];
+console.log(cars);
+
+const benzina = cars.filter(
+    function (fuel) {
+        return fuel.alimentazione === "Benzina";
+    }
+);
+console.log(benzina);
+
+const diesel = cars.filter(
+    function (fuel) {
+        return fuel.alimentazione === "Diesel";
+    }
+);
+console.log(diesel);
+
+const altro = cars.filter(
+    function (fuel) {
+        return (fuel.alimentazione !== "Benzina" && fuel.alimentazione !== "Diesel");
+    }
+);
+console.log(altro);
