@@ -7,22 +7,22 @@ const cars = [
     {
         marca: "BMW",
         modello: "A1",
-        alimentazione: "Benzina"
+        alimentazione: "benzina"
     },
     {
         marca: "Fiat",
         modello: "Panda",
-        alimentazione: "Metano"
+        alimentazione: "metano"
     },
     {
         marca: "AlfaRomeo",
         modello: "Stelvio",
-        alimentazione: "Elettrico"
+        alimentazione: "elettrico"
     },
     {
         marca: "Ferrari",
         modello: "Enzo",
-        alimentazione: "Diesel"
+        alimentazione: "diesel"
     },
     {
         marca: "Audi",
@@ -32,17 +32,17 @@ const cars = [
     {
         marca: "Mercedes",
         modello: "Sls",
-        alimentazione: "Benzina"
+        alimentazione: "benzina"
     },
     {
         marca: "Lamborghini",
         modello: "Aventador",
-        alimentazione: "Elettrico"
+        alimentazione: "elettrico"
     },
     {
         marca: "Abarth",
         modello: "500",
-        alimentazione: "Diesel"
+        alimentazione: "diesel"
     },
     {
         marca: "Bugatti",
@@ -52,28 +52,28 @@ const cars = [
     {
         marca: "Aston Martin",
         modello: "Gt",
-        alimentazione: "Benzina"
+        alimentazione: "benzina"
     },
 ];
 console.log(cars);
 
 const benzina = cars.filter(
     function (fuel) {
-        return fuel.alimentazione === "Benzina";
+        return fuel.alimentazione === "benzina";
     }
 );
 console.log(benzina);
 
 const diesel = cars.filter(
     function (fuel) {
-        return fuel.alimentazione === "Diesel";
+        return fuel.alimentazione === "diesel";
     }
 );
 console.log(diesel);
 
 const altro = cars.filter(
     function (fuel) {
-        return (fuel.alimentazione !== "Benzina" && fuel.alimentazione !== "Diesel");
+        return (fuel.alimentazione !== "benzina" && fuel.alimentazione !== "diesel");
     }
 );
 console.log(altro);
